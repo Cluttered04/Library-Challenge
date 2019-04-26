@@ -1,10 +1,8 @@
 using System;
 
 namespace classes_challenge {
-    class Librarian {
+    class Librarian : Parent{
     public int id {get; set;}
-    public string firstName {get; set;}
-    public string lastName {get; set;}
     public void checkOutBook(Book book, Library library, Patron patron){
         if(library.currentInventory.Contains(book)){
             library.currentInventory.Remove(book);
